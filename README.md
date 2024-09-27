@@ -87,3 +87,7 @@ Style improvements and bug fixes are especially welcome.
 ### License
 
 MIT
+
+## Acknowledgemnt
+
+The CV template is modified from https://github.com/otiliastr/otiliastr.github.io.git
