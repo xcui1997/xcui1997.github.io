@@ -4,119 +4,218 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xin Cui - Publications</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css">
     <style>
-        .badge { display: inline-block; padding: 0.25em 0.4em; font-size: 75%; font-weight: 700; line-height: 1; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: 0.25rem; }
-        .light-green { background-color: #8bc34a; color: white; }
-        .grey { background-color: #9e9e9e; color: white; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 10px 0;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+        }
+        .logo span {
+            font-weight: bold;
+        }
+        .nav-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+        }
+        .nav-links a.active {
+            color: #8cc63f;
+        }
+        h1 {
+            font-size: 48px;
+            color: #555;
+            margin-top: 40px;
+        }
+        .subtitle {
+            color: #8cc63f;
+            margin-bottom: 40px;
+        }
+        .publication {
+            display: flex;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        .badge {
+            background-color: #8cc63f;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            margin-right: 15px;
+            height: fit-content;
+        }
+        .content {
+            flex-grow: 1;
+        }
+        .title {
+            font-size: 18px;
+            color: #444;
+            margin-bottom: 5px;
+        }
+        .authors {
+            margin-bottom: 5px;
+        }
+        .author {
+            color: #8cc63f;
+        }
+        .details {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        .links a {
+            background-color: #ccc;
+            color: #333;
+            padding: 3px 8px;
+            border-radius: 3px;
+            text-decoration: none;
+            font-size: 12px;
+            margin-right: 5px;
+        }
+        .year {
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-size: 36px;
+            color: #eee;
+        }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid p-0">
-            <a class="navbar-brand title font-weight-lighter" href="/"><span class="font-weight-bold">Xin</span> Cui</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse text-right" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="/">about</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/cv/">curriculum vitae</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="/publications/">publications <span class="sr-only">(current)</span></a></li>
-                </ul>
-            </div>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo"><span>Xin</span> Cui</div>
+                <div class="nav-links">
+                    <a href="/">about</a>
+                    <a href="/cv/">curriculum vitae</a>
+                    <a href="/publications/" class="active">publications</a>
+                    <a href="/teaching/">teaching</a>
+                </div>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <div class="progress-container">
-        <div class="progress-bar"></div>
-    </div>
+    <main class="container">
+        <h1>publications</h1>
+        <p class="subtitle">* denotes corresponding author</p>
 
-    <div class="container mt-4">
-        <h1>Publications</h1>
-        <p class="text-muted"><small>* denotes corresponding author</small></p>
-
-        <div class="row mt-4">
-            <div class="col-sm-1">
-                <h3 class="bibliography-year">2024</h3>
+        <div class="publication">
+            <div class="badge">GRL</div>
+            <div class="content">
+                <div class="title">Integrated investigation on heterogeneous lower crust rheology in Kyushu and afterslip behavior following the 2016 Mw7.1 Kumamoto earthquake.</div>
+                <div class="authors">
+                    Yiqing Liu, <span class="author">Xin Cui</span>, <a href="https://scholar.google.com/citations?user=E5yrmYsAAAAJ&hl=zh-CN" target="_blank">Yan Hu*</a>, Jian Zhang and Yunguo Chen
+                </div>
+                <div class="details">
+                    Geophysical Research Letters, 51, e2023GL107606.
+                </div>
+                <div class="links">
+                    <a href="#" onclick="toggleAbstract('abstract1')">Abstract</a>
+                    <a href="https://doi.org/10.1029/2023GL107606" target="_blank">Website</a>
+                </div>
+                <div id="abstract1" style="display:none;">
+                    The viscoelastic lower crust beneath Kyushu Island, influenced by the volcanic arc, interplays with active crustal faults in this region and helps to shape local tectonics. In this study, we employed a three-dimensional viscoelastic finite element model to gain insights into the lithospheric rheology and crustal faulting kinematics, through modeling the postseismic deformation processes of the 2016 Mw 7.1 Kumamoto earthquake. Our model reveals a viscosity of 2 × 10^20 Pa s for the lower crust and 2 × 10^19 Pa s for the upper mantle. A reduced lower crust viscosity of 2 × 10^19 Pa s in the volcanic arc area is required for better reproducing the Global Positioning System data. The stress-driven afterslip decays rapidly over time and is up to 0.3 m within 5 years after the earthquake. We propose additional normal-component afterslip to better explain the complex postseismic deformation in the near field, which may be due to the interaction between the fault and volcano Aso.
+                </div>
             </div>
-            <div class="col-sm-11">
-                <ol>
-                    <li class="mb-4">
-                        <span class="badge light-green">GRL</span>
-                        <h5 class="mt-2">Integrated investigation on heterogeneous lower crust rheology in Kyushu and afterslip behavior following the 2016 Mw7.1 Kumamoto earthquake</h5>
-                        <p>Yiqing Liu, <strong>Xin Cui</strong>, <a href="https://scholar.google.com/citations?user=E5yrmYsAAAAJ&hl=zh-CN" target="_blank">Yan Hu*</a>, Jian Zhang and Yunguo Chen</p>
-                        <p>Geophysical Research Letters, 51, e2023GL107606</p>
-                        <button class="btn btn-sm btn-secondary" type="button" data-toggle="collapse" data-target="#abstract1">Abstract</button>
-                        <a href="https://doi.org/10.1029/2023GL107606" class="btn btn-sm btn-secondary" target="_blank">Website</a>
-                        <div id="abstract1" class="collapse mt-2">
-                            <div class="card card-body">
-                                The viscoelastic lower crust beneath Kyushu Island, influenced by the volcanic arc, interplays with active crustal faults in this region and helps to shape local tectonics. In this study, we employed a three-dimensional viscoelastic finite element model to gain insights into the lithospheric rheology and crustal faulting kinematics, through modeling the postseismic deformation processes of the 2016 Mw 7.1 Kumamoto earthquake. Our model reveals a viscosity of 2 × 10^20 Pa s for the lower crust and 2 × 10^19 Pa s for the upper mantle. A reduced lower crust viscosity of 2 × 10^19 Pa s in the volcanic arc area is required for better reproducing the Global Positioning System data. The stress-driven afterslip decays rapidly over time and is up to 0.3 m within 5 years after the earthquake. We propose additional normal-component afterslip to better explain the complex postseismic deformation in the near field, which may be due to the interaction between the fault and volcano Aso.
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="mb-4">
-                        <span class="badge light-green">SRL</span>
-                        <h5 class="mt-2">Bridging supervised and unsupervised learning to build volcano-seismicity classifiers in Kilauea, Hawaii</h5>
-                        <p><strong>Xin Cui</strong>, Yanlan Hu, <a href="https://scholar.google.com/citations?user=ohnC6TkAAAAJ&hl=zh-CN" target="_blank">Shang Ma</a>, <a href="https://scholar.google.com/citations?user=6hqzUaAAAAAJ&hl=zh-CN" target="_blank">Zefeng Li*</a>, Guomin Liu and <a href="https://scholar.google.com/citations?user=7xXZebgAAAAJ&hl=zh-CN" target="_blank">Hui Huang</a></p>
-                        <p>Seismological Research Letters, 95(3), 1849-1857</p>
-                        <button class="btn btn-sm btn-secondary" type="button" data-toggle="collapse" data-target="#abstract2">Abstract</button>
-                        <a href="https://dx.doi.org/10.1785/0220230251" class="btn btn-sm btn-secondary" target="_blank">Website</a>
-                        <div id="abstract2" class="collapse mt-2">
-                            <div class="card card-body">
-                                Real-time classification of volcano seismicity could become a useful component in volcanic monitoring. Supervised learning provides a powerful means to achieve this but often requires a large amount of manually labeled data. Here, we build supervised learning models to discriminate volcano tectonic events (VTs), long-period events (LPs), and hybrid events in Kilauea by training with pseudolabels from unsupervised clustering. We test three different supervised models, and all of them achieve >93% accuracy. We apply the model ensemble to the six-day seismicity during the eruption in 2018 and show that they were mainly VTs (62%), in comparison with the dominance of LPs prior to the eruption (68%). The success of our method is aided by the accuracy of the majority of pseudolabels and the consistency of the three models' performance. Using Shapley additive explanations, we show that the frequency contents at 1-4 Hz are the most important to differentiate volcano seismicity types. This work, together with our previous clustering analysis, provides an example of bridging unsupervised and supervised learning to construct potential real-time seismic classifiers from scratch.
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="mb-4">
-                        <span class="badge light-green">Nature Geoscience</span>
-                        <h5 class="mt-2">Similar seismic moment release process for shallow and deep earthquakes</h5>
-                        <p><strong>Xin Cui</strong>, <a href="https://scholar.google.com/citations?user=6hqzUaAAAAAJ&hl=zh-CN" target="_blank">Zefeng Li*</a>, and <a href="https://scholar.google.com/citations?user=E5yrmYsAAAAJ&hl=zh-CN" target="_blank">Yan Hu</a></p>
-                        <p>Nature Geoscience, 16, 454-460 (2024)</p>
-                        <button class="btn btn-sm btn-secondary" type="button" data-toggle="collapse" data-target="#abstract3">Abstract</button>
-                        <a href="https://doi.org/10.1038/s41561-023-01176-5" class="btn btn-sm btn-secondary" target="_blank">Website</a>
-                        <div id="abstract3" class="collapse mt-2">
-                            <div class="card card-body">
-                                The generation of earthquakes at depths exceeding 60 km remains debated, as rocks at such depths are anticipated to be ductile. Seismological investigations have revealed a variety of rupture characteristics that are distinguishable between shallow (0-60 km), intermediate-depth (60-300 km) and deep-focus (300-700 km) earthquakes, but it is unclear whether different physical mechanisms are controlling earthquake ruptures. Here, we apply machine learning classification to a global database of earthquakes with moderate to large moment magnitudes to show that depth-dependent elastic properties can explain the range of resulting rupture characteristics. We find that the rigidity of the surrounding medium is the primary control of the earthquakes' source characteristics and that all the analysed earthquakes shared similar moment release processes with the medium effect corrected. Thus, the rupture duration, rupture length and the associated drop in stress scale with depth due to the accompanying changes in rigidity. Our results support a constant strain drop hypothesis, in which the ratio of coseismic slip to the characteristic rupture length remains largely unchanged for earthquakes at all depths and regardless of the nucleation mechanisms. These results also suggest that medium-rigidity-corrected earthquake self-similarity holds for earthquakes of different depths and host-rock types.
-                            </div>
-                        </div>
-                    </li>
-                </ol>
-            </div>
+            <div class="year">2024</div>
         </div>
 
-        <div class="row mt-4">
-            <div class="col-sm-1">
-                <h3 class="bibliography-year">2021</h3>
+        <div class="publication">
+            <div class="badge">SRL</div>
+            <div class="content">
+                <div class="title">Bridging supervised and unsupervised learning to build volcano-seismicity classifiers in Kilauea, Hawaii</div>
+                <div class="authors">
+                    <span class="author">Xin Cui</span>, Yanlan Hu, <a href="https://scholar.google.com/citations?user=ohnC6TkAAAAJ&hl=zh-CN" target="_blank">Shang Ma</a>, <a href="https://scholar.google.com/citations?user=6hqzUaAAAAAJ&hl=zh-CN" target="_blank">Zefeng Li*</a>, Guomin Liu and <a href="https://scholar.google.com/citations?user=7xXZebgAAAAJ&hl=zh-CN" target="_blank">Hui Huang</a>
+                </div>
+                <div class="details">
+                    Seismological Research Letters, 95(3), 1849-1857
+                </div>
+                <div class="links">
+                    <a href="#" onclick="toggleAbstract('abstract2')">Abstract</a>
+                    <a href="https://dx.doi.org/10.1785/0220230251" target="_blank">Website</a>
+                </div>
+                <div id="abstract2" style="display:none;">
+                    Real-time classification of volcano seismicity could become a useful component in volcanic monitoring. Supervised learning provides a powerful means to achieve this but often requires a large amount of manually labeled data. Here, we build supervised learning models to discriminate volcano tectonic events (VTs), long-period events (LPs), and hybrid events in Kilauea by training with pseudolabels from unsupervised clustering. We test three different supervised models, and all of them achieve >93% accuracy. We apply the model ensemble to the six-day seismicity during the eruption in 2018 and show that they were mainly VTs (62%), in comparison with the dominance of LPs prior to the eruption (68%). The success of our method is aided by the accuracy of the majority of pseudolabels and the consistency of the three models' performance. Using Shapley additive explanations, we show that the frequency contents at 1-4 Hz are the most important to differentiate volcano seismicity types. This work, together with our previous clustering analysis, provides an example of bridging unsupervised and supervised learning to construct potential real-time seismic classifiers from scratch.
+                </div>
             </div>
-            <div class="col-sm-11">
-                <ol>
-                    <li class="mb-4">
-                        <span class="badge light-green">GRL</span>
-                        <h5 class="mt-2">Subdivision of seismicity beneath the summit region of Kilauea volcano: Implications for the preparation process of the 2018 eruption</h5>
-                        <p><strong>Xin Cui</strong>, <a href="https://scholar.google.com/citations?user=6hqzUaAAAAAJ&hl=zh-CN" target="_blank">Zefeng Li*</a>, and <a href="https://scholar.google.com/citations?user=7xXZebgAAAAJ&hl=zh-CN" target="_blank">Hui Huang</a></p>
-                        <p>Geophysical Research Letters, 48, e2021GL094698 (2021)</p>
-                        <button class="btn btn-sm btn-secondary" type="button" data-toggle="collapse" data-target="#abstract4">Abstract</button>
-                        <a href="https://doi.org/10.1029/2021GL094698" class="btn btn-sm btn-secondary" target="_blank">Website</a>
-                        <a href="https://github.com/xcui1997/Multi-station-volcanic-seismicity-classification" class="btn btn-sm btn-secondary" target="_blank">Code</a>
-                        <div id="abstract4" class="collapse mt-2">
-                            <div class="card card-body">
-                                Long-period (LP), hybrid, and volcano-tectonic (VT) seismicity are important indicators for tracking the evolution of volcanic processes. Here, we propose an unsupervised learning method to classify 5,949 seismic events in Kilauea volcano, Hawai'i, during a 4-month period before the collapse of Pu'u' O'o on April 30, 2018. The LPs and hybrids exhibit three major episodes, which progressively intensified and had increasing shallow events toward the eruption. The most intense episode starting 3 weeks before eruption coincides with changes in near-caldera deformation and lava lake elevation in Halema'uma'u, serving as possible immediate precursors. However, the first two episodes imply magma migration was already active months prior to the eruption. The spatiotemporal patterns of abundant hybrids reveal that they are associated with magma movement but mixed with shear-failure or near-surface resonance. Our results provide useful constraints on the magmatic processes in the preparation phase of the Kilauea eruption in 2018.
-                            </div>
-                        </div>
-                    </li>
-                </ol>
-            </div>
+            <div class="year">2024</div>
         </div>
-    </div>
 
-    <footer class="mt-4 text-center">
+        <div class="publication">
+            <div class="badge">Nature Geoscience</div>
+            <div class="content">
+                <div class="title">Similar seismic moment release process for shallow and deep earthquakes.</div>
+                <div class="authors">
+                    <span class="author">Xin Cui</span>, <a href="https://scholar.google.com/citations?user=6hqzUaAAAAAJ&hl=zh-CN" target="_blank">Zefeng Li*</a>, and <a href="https://scholar.google.com/citations?user=E5yrmYsAAAAJ&hl=zh-CN" target="_blank">Yan Hu</a>
+                </div>
+                <div class="details">
+                    Nature Geoscience, 16, 454-460 (2024)
+                </div>
+                <div class="links">
+                    <a href="#" onclick="toggleAbstract('abstract3')">Abstract</a>
+                    <a href="https://doi.org/10.1038/s41561-023-01176-5" target="_blank">Website</a>
+                </div>
+                <div id="abstract3" style="display:none;">
+                    The generation of earthquakes at depths exceeding 60 km remains debated, as rocks at such depths are anticipated to be ductile. Seismological investigations have revealed a variety of rupture characteristics that are distinguishable between shallow (0-60 km), intermediate-depth (60-300 km) and deep-focus (300-700 km) earthquakes, but it is unclear whether different physical mechanisms are controlling earthquake ruptures. Here, we apply machine learning classification to a global database of earthquakes with moderate to large moment magnitudes to show that depth-dependent elastic properties can explain the range of resulting rupture characteristics. We find that the rigidity of the surrounding medium is the primary control of the earthquakes' source characteristics and that all the analysed earthquakes shared similar moment release processes with the medium effect corrected. Thus, the rupture duration, rupture length and the associated drop in stress scale with depth due to the accompanying changes in rigidity. Our results support a constant strain drop hypothesis, in which the ratio of coseismic slip to the characteristic rupture length remains largely unchanged for earthquakes at all depths and regardless of the nucleation mechanisms. These results also suggest that medium-rigidity-corrected earthquake self-similarity holds for earthquakes of different depths and host-rock types.
+                </div>
+            </div>
+            <div class="year">2024</div>
+        </div>
+
+        <div class="publication">
+            <div class="badge">GRL</div>
+            <div class="content">
+                <div class="title">Subdivision of seismicity beneath the summit region of Kilauea volcano: Implications for the preparation process of the 2018 eruption.</div>
+                <div class="authors">
+                    <span class="author">Xin Cui</span>, <a href="https://scholar.google.com/citations?user=6hqzUaAAAAAJ&hl=zh-CN" target="_blank">Zefeng Li*</a>, and <a href="https://scholar.google.com/citations?user=7xXZebgAAAAJ&hl=zh-CN" target="_blank">Hui Huang</a>
+                </div>
+                <div class="details">
+                    Geophysical Research Letters, 48, e2021GL094698 (2021)
+                </div>
+                <div class="links">
+                    <a href="#" onclick="toggleAbstract('abstract4')">Abstract</a>
+                    <a href="https://doi.org/10.1029/2021GL094698" target="_blank">Website</a>
+                    <a href="https://github.com/xcui1997/Multi-station-volcanic-seismicity-classification" target="_blank">Code</a>
+                </div>
+                <div id="abstract4" style="display:none;">
+                    Long-period (LP), hybrid, and volcano-tectonic (VT) seismicity are important indicators for tracking the evolution of volcanic processes. Here, we propose an unsupervised learning method to classify 5,949 seismic events in Kilauea volcano, Hawai'i, during a 4-month period before the collapse of Pu'u' O'o on April 30, 2018. The LPs and hybrids exhibit three major episodes, which progressively intensified and had increasing shallow events toward the eruption. The most intense episode starting 3 weeks before eruption coincides with changes in near-caldera deformation and lava lake elevation in Halema'uma'u, serving as possible immediate precursors. However, the first two episodes imply magma migration was already active months prior to the eruption. The spatiotemporal patterns of abundant hybrids reveal that they are associated with magma movement but mixed with shear-failure or near-surface resonance. Our results provide useful constraints on the magmatic processes in the preparation phase of the Kilauea eruption in 2018.
+                </div>
+            </div>
+            <div class="year">2021</div>
+        </div>
+    </main>
+
+    <footer class="container">
         <p>&copy; Copyright 2024 Xin Cui.</p>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleAbstract(id) {
+            var x = document.getElementById(id);
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
